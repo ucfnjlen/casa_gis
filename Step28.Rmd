@@ -5,9 +5,9 @@ library(sf)
 library(tmap)
 library(tmaptools)
 #read some data attributes
-LondonData <- read_csv("https://files.datapress.com/london/dataset/ward-profiles-and-atlas/2015-09-24T1:21:24/ward-profiles-excel-version.csv", na = "n/a")
+LondonData <- read_csv("https://files.datapress.com/london/dataset/ward-profiles-and-atlas/2015-09-24T14:21:24/ward-profiles-excel-version.csv", na = "n/a")
 #read some geometries
-EW <- geojson_read("http://geoportal.statistics.gov.uk/datasets/8edeafbe276d4b56aec60991cbddda50_2.geojson", what = "sp")
+EW <- geojson_read("http://geoportal.statistics.gov.uk/datasets/8edafbe3276d4b56aec60991cbddda50_2.geojson", what = "sp")
 #pull out london
 LondonMap <- EW[grep("^E09",EW@data$lad15cd),]
 #convert to a simple features object
