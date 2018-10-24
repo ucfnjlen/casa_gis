@@ -1,0 +1,12 @@
+```{r}
+library(tidyverse)
+library(geojsonio)
+library(sf)
+library(tmap)
+library(tmaptools)
+#read some data attributes
+LondonData <- read_csv("https://files.datapress.com/london/dataset/ward-profiles-and-atlas/2015-09-24T1:21:24/ward-profiles-excel-version.csv", na = "n/a")
+#read some geometries
+EW <- geo
+```
+
